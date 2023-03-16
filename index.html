@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HAY CANTIK KU</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- my fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  my css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-danger p-2 text-dark bg-opacity-50">
+    <div class="kotak text-center">
+      <audio autoplay controls loop>
+        <source src="Already Gone.mp3" type="audio/mpeg" />
+        Browsermu tidak mendukung tag audio, upgrade donk!
+      </audio>
+
+      <h1 class="fs-1 text-uppercase my-3 teks fw-semibold">hai cantik ku</h1>
+      <br />
+      <img
+        src="https://media.tenor.com/IkLiuPE0IP0AAAAj/cute-bear.gif"
+        class="border-none"
+        alt=""
+      />
+      <br />
+      <br />
+      <h1 class="fs-3 mt-5">Maukah Kamu Menjadi Pacarku ?</h1>
+      <br />
+      <br />
+
+      <button
+        class="btn btn-success me-5"
+        id="btn_mau"
+        onclick="alert(' Ayok Jadian Yuk 😍')"
+      >
+        MAUU
+      </button>
+
+      <button
+        class="btn btn-danger"
+        id="btn_gamau"
+        onclick="gamau(this)"
+        style="position: absolute"
+      >
+        GAMAU
+      </button>
+
+      <footer>
+        <p class="text-muted text-center mt-4">&copy; punyaku</p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- my script -->
+    <script>
+      function gamau(id) {
+        var mau = document.getElementById("btn_mau");
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+      }
+    </script>
+  </body>
+</html>
